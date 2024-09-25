@@ -1,5 +1,5 @@
 
-# Librarian Staff Manager
+# Binar Car Rental + Javascript Implementation
 
 Membuat tampilan web statis pada website Binar Rental Car dengan mengimplementasikan konsep Object-Oriented Programming (OOP) dan manipulasi Document Object Model (DOM). Proses ini melibatkan penerapan prinsip OOP untuk menyusun komponen web secara modular dan terstruktur, serta memanfaatkan DOM manipulation untuk mengelola dan memodifikasi elemen-elemen HTML secara dinamis, sehingga tampilan website dapat interaktif dan responsif terhadap tindakan pengguna
 
@@ -22,11 +22,12 @@ Membuat tampilan web statis pada website Binar Rental Car dengan mengimplementas
 ## Fitur
 
 - **Filtering Card Mobil**:
-  - Tambahkan staff baru ke dalam database dengan shift pagi atau malam.
-  - Edit informasi staff yang sudah ada dengan mudah.
+  - Daftar mobil dapat di-filter berdasarkan Tipe Driver
+  - Daftar mobil dapat di-filter berdasarkan Waktu Sewa
+  - Daftar mobil dapat di-filter berdasarkan Waktu Sewa
 
-- **Katalog Buku**:
-  - Lihat daftar buku yang tersedia di perpustakaan.
+- **Daftar Mobil**:
+  - Lihat daftar Mobil yang tersedia di website.
 
 ## Instalasi
 
