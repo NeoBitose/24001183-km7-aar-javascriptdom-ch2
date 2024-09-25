@@ -1,0 +1,347 @@
+/* component */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 14px;
+}
+
+.why-us h4 {
+    font-size: 24px;
+}
+
+.btn {
+    border-radius: 2px;
+}
+
+.contains {
+    width: calc(100vw - 5vw);
+    margin: auto;
+}
+
+@media(min-width:426px) {
+    .contains {
+        width: calc(100vw - 20vw);
+    }
+}
+
+@media(min-width:1441px) {
+    .contains {
+        width: calc(100vw - 30vw);
+    }
+}
+
+/* Navigation */
+.logo-box {
+    width: 100px;
+    height: 34px;
+}
+
+@media(max-width:990px) {
+    .nav-mobile {
+        width: calc(100vw - 10vw);
+        margin: 0 auto;
+    }
+}
+
+/* Hero */
+
+.img-hero {
+    padding: 3vh 0 0 5vw;
+    position: relative;
+    right: 0;
+}
+
+.desc-hero-content {
+    padding: 0 5vw 0 5vw;
+}
+
+.desc-hero-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.desc-hero-content p {
+    margin-bottom: 16px;
+}
+
+@media(min-width:426px) {
+    .img-hero {
+        padding: 2vh 0 0 10vw;
+    }
+
+    .desc-hero-content {
+        padding: 5vh 5vw 0 10vw;
+    }
+
+    .desc-hero-content p {
+        width: 80%;
+    }
+}
+
+@media(min-width:991px) {
+    .desc-hero {
+        width: 50%;
+    }
+
+    .img-hero {
+        width: 50%;
+        padding: 2vh 0 0 2vw;
+    }
+}
+
+@media(min-width:1441px) {
+    .desc-hero-content {
+        padding: 0 0 0 15vw;
+    }
+
+    .desc-hero-content p {
+        width: 70%;
+    }
+}
+
+/* Service */
+.service {
+    padding: 10vh 2vw 5vh 2vw;
+}
+
+.img-service {
+    width: 75%;
+}
+
+.desc-service-content h4 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+
+.desc-service-content p {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+@media(min-width:426px) {
+    .service {
+        padding: 10vh 0 5vh 0;
+    }
+}
+
+@media(min-width:991px) {
+    .service {
+        width: 70%;
+    }
+
+    .img-service {
+        width: 50%;
+    }
+
+    .desc-service {
+        width: 50%;
+    }
+
+    .desc-service-content {
+        width: 90%;
+    }
+}
+
+@media(min-width:1441px) {
+    .service {
+        width: 60%;
+    }
+}
+
+/* Why Us */
+
+.why-us {
+    padding: 5vh 2vw;
+}
+
+@media(min-width:446px) {
+    .why-us {
+        padding: 5vh 0vw;
+    }
+}
+
+/* Testimonial */
+.testimonial {
+    padding: 5vh 2vw;
+}
+
+.carousel-item p {
+    width: 120%;
+    position: relative;
+    left: -10%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/kiri.png);
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/kanan.png);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 30px;
+    height: 31px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    top: 20%;
+    align-items: start;
+}
+
+@media(min-width:446px) {
+    .testimonial {
+        padding: 5vh 0vw;
+    }
+
+    .carousel {
+        width: 100%;
+        margin: auto;
+    }
+
+    .carousel-item p {
+        width: 150%;
+        position: static;
+        left: 0;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 60px;
+        height: 65px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: 0;
+        align-items: center;
+    }
+}
+
+@media(min-width:991px) {
+    .carousel {
+        width: 72%;
+        margin: auto;
+    }
+
+    .carousel-item p {
+        width: 100%;
+    }
+}
+
+/* CTA Banner */
+
+.banner {
+    padding: 5vh 2vw;
+}
+
+.banner-content {
+    border-radius: 13px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.banner-content h1 {
+    font-size: 24px;
+    line-height: 36px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner-content p {
+    width: 90%;
+    margin: auto;
+}
+
+@media(min-width:426px) {
+    .banner {
+        padding: 5vh 0vw;
+    }
+
+    .banner-content {
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+    }
+
+    .banner-content h1 {
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+    .banner-content p {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+/* Faq */
+
+.faq {
+    padding: 5vh 2vw;
+}
+
+.faq-content {
+    width: 100%;
+}
+
+.title-faq,
+.accord-faq {
+    width: 100%;
+}
+
+.accordion-button {
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-button::after {
+    border: 2px;
+}
+
+@media(min-width:426px) {
+    .faq {
+        padding: 5vh 0vw;
+    }
+
+    .title-faq {
+        width: 40%;
+    }
+
+    .accord-faq {
+        width: 60%;
+    }
+}
+
+/* Footer */
+
+.footer {
+    padding: 5vh 2vw;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+@media(min-width:426px) {
+    .footer {
+        padding: 5vh 0 10vh 0;
+    }
+}
