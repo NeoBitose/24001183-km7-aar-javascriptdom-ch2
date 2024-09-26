@@ -11,7 +11,7 @@ class App {
 
     async init() {
         await this.loadFilter();
-        console.log("ok");
+        // console.log("ok");
         // this.run();
         // this.loadButton.onclick = this.run;
         this.loadButton.onclick = async () => {
@@ -50,24 +50,11 @@ class App {
             if (this.driverType.value !== 'default' && this.dateRent.value !== '' && this.timeRent.value !== 'false' && this.passanger.value >= 0) {
                 return (availableAt || notAvailableAt) && checkTime && passangers
             }
-            else if (this.driverType.value !== 'default' && this.passanger.value > 0) {
-                return (availableAt || notAvailableAt) && passangers
+            else{
+                return 0;
             }
-            else if (this.dateRent.value !== '' && this.timeRent.value !== 'false' && this.passanger.value > 0) {
-                return checkTime && passangers
-            }
-            else if (this.dateRent.value !== '' && this.timeRent.value !== 'false') {
-                return checkTime
-            }
-            else if (this.driverType.value !== 'default') {
-                return (availableAt || notAvailableAt)
-            }
-            else {
-                return passangers
-            }
-
         });
-        console.log(cars)
+        // console.log(cars)
         Car.init(cars);
     }
 
