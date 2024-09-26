@@ -14,4 +14,9 @@ console.log(params);
  * */
 const app = new App();
 
-app.init().then(app.run);
+app.loadButton.addEventListener('click', () => {
+    app.clear()
+    app.loadFilter().then(app.run());
+})
+
+app.init()
