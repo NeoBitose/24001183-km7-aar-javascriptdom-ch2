@@ -182,11 +182,11 @@ p {
 }
 
 .carousel-control-prev-icon {
-    background-image: url(../img/kiri.png);
+    background-image: url(../images/kiri.png);
 }
 
 .carousel-control-next-icon {
-    background-image: url(../img/kanan.png);
+    background-image: url(../images/kanan.png);
 }
 
 .carousel-control-next-icon,
@@ -344,4 +344,16 @@ p {
     .footer {
         padding: 5vh 0 10vh 0;
     }
+}
+
+/* Filter Card */
+
+.filter-card .card{
+    position: relative;
+    bottom: 40px;
+}
+
+.card-img-top {
+    height: 30vh;
+    object-fit: cover;
 }

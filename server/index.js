@@ -11,7 +11,7 @@ const server = (req, res) => {
     if (req.url === "/") {
         req.url = "/index.html"
     } else if (req.url === '/cars') {
-        req.url = '/cars.html'
+        req.url = "/filter.html"
     } else {
         req.url = req.url;
     }

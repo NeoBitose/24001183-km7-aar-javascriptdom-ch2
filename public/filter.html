@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Project | Chapter 1</title>
+    <!-- link Vendor -->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Link Css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header id="header" class="bg-info">
+        <!-- Nav Section -->
+        <nav class="navbar navbar-expand-lg bg-info">
+            <div class="contains d-flex justify-content-between">
+                <div class="d-flex justify-content-between align-items-center nav-mobile">
+                    <a class="navbar-brand" href="#">
+                        <div class="logo-box bg-primary"></div>
+                    </a>
+                    <button class="navbar-toggler border-0 px-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header pb-1 pb-sm-2">
+                        <h6 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">BCR</h6>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body pt-1 pt-sm-2 ms-lg-auto">
+                        <ul class="navbar-nav nav nav-pills">
+                            <li class="nav-item my-auto">
+                                <a href="#service" class="nav-link ms-lg-3 text-dark fw-normal">Our Services</a>
+                            </li>
+                            <li class="nav-item my-auto">
+                                <a href="#why-us" class="nav-link ms-lg-3 text-dark fw-normal">Why Us</a>
+                            </li>
+                            <li class="nav-item my-auto">
+                                <a href="#testimonial" class="nav-link ms-lg-3 text-dark fw-normal">Testimonial</a>
+                            </li>
+                            <li class="nav-item my-auto">
+                                <a href="#faq" class="nav-link ms-lg-3 text-dark fw-normal">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ms-lg-3 text-dark fw-normal" aria-current="page">
+                                    <button class="btn btn-success">Register</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="Hero" class="hero d-lg-flex mt-3">
+            <div class="desc-hero d-flex align-items-center">
+                <!-- Deskripsi Hero -->
+                <div class="desc-hero-content">
+                    <h1 class="mb-3">
+                        Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
+                    </h1>
+                    <p class="mb-3">
+                        Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas
+                        terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
+                        untuk sewa mobil selama 24 jam.
+                    </p>
+                </div>
+            </div>
+            <!-- Img Hero -->
+            <div class="img-hero">
+                <img src="./images/img_car.png" class="img-fluid" alt="hero image">
+            </div>
+        </section>
+    </header>
+
+    <!-- Filtering card -->
+    <section id="filter-card" class="filter-card contains">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-12 col-12">
+                        <div class="row py-3 px-4">
+                            <div class="col-lg-auto col-xl-2 col-xxl-3 col-md-auto">
+                                <label>Tipe Driver</label>
+                                <select class="form-select" id="driver-type">
+                                    <option value="default" selected>Pilih Tipe Driver &nbsp; &nbsp; &nbsp; &nbsp;
+                                    </option>
+                                    <option value="true">Dengan Supir</option>
+                                    <option value="false">Tanpa Supir (Lepas Kunci)</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-auto col-xl-auto col-md-auto">
+                                <label>Tanggal</label>
+                                <input type="date" class="form-control" placeholder="Pilih Tanggal" id="date-rent">
+                            </div>
+                            <div class="col-lg-auto col-xl-auto col-md-auto search__time">
+                                <labe>Pilih Waktu</labe>
+                                <select class="form-select" id="time-rent">
+                                    <option value="false" selected>Pilih Waktu &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    </option>
+                                    <option value="08:00">08.00 WIB</option>
+                                    <option value="09:00">09.00 WIB</option>
+                                    <option value="10:00">10.00 WIB</option>
+                                    <option value="11:00">11.00 WIB</option>
+                                    <option value="12:00">12.00 WIB</option>
+                                </select>
+
+                            </div>
+                            <div class="col-lg-auto col-xl-auto col-md-auto">
+                                <label class="fw-light">Jumlah Penumpang (optional)</label>
+                                <div class="input-group">
+                                    <input type="search" class="form-control border-end-0"
+                                        placeholder="Jumlah Penumpang" id="passanger" value="0">
+                                    <span class="input-group-text bg-white">
+                                        <img src="./images/fi_users.png" width="20px" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-xl-auto col-md-2  pt-4">
+                                <button class="btn btn-success" id="load-btn">Cari Mobil</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Cards -->
+    <section class="cars mb-5">
+        <div class="contains">
+            <div class="row" id="cars-container">
+                <!-- <div class="col-lg-4">
+                    <div class="card px-4 py-4 mb-3">
+                        <img src="./images/cars/car01.min.jpg" class="card-img-top img-fluid">
+                        <div class="card-body px-0 pt-3 pb-0">
+                            <h5 class="card-title fs-6">Nama/Tipe Mobil</h5>
+                            <h5 class="card-title fs-5 fw-bold">Rp 430.000 / hari</h5>
+                            <p class="cars__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <div class="row">
+                                <div class="col-1">
+                                    <img src="./images/fi_users1.png" width="20px" alt="" srcset="">
+                                </div>
+                                <div class="col-10 ms-lg-2">
+                                    4 orang
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-1">
+                                    <img src="./images/fi_settings.png" width="20px" alt="" srcset="">
+                                </div>
+                                <div class="col-10 ms-lg-2">
+                                    Manual
+                                </div>
+                            </div>
+                            <div class="row mt-2 mb-4">
+                                <div class="col-1">
+                                    <img src="./images/fi_calendar.png" width="20px" alt="" srcset="">
+                                </div>
+                                <div class="col-10 ms-lg-2">
+                                    Tahun 2020
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn-success" style="width:100%">Pilih Mobil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card px-4 py-4 mb-3">
+                        <img src="./images/cars/car02.min.jpg" class="card-img-top img-fluid">
+                        <div class="card-body px-0 pt-3 pb-0">
+                            <h5 class="card-title fs-6">Nama/Tipe Mobil</h5>
+                            <h5 class="card-title fs-5 fw-bold">Rp 430.000 / hari</h5>
+                            <p class="cars__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <div class="row">
+                                <div class="col-1">
+                                    <img src="./images/fi_users1.png" width="20px" alt="" srcset="">
+                                </div>
+                                <div class="col-10 ms-lg-2">
+                                    4 orang
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-1">
+                                    <img src="./images/fi_settings.png" width="20px" alt="" srcset="">
+                                </div>
+                                <div class="col-10 ms-lg-2">
+                                    Manual
+                                </div>
+                            </div>
+                            <div class="row mt-2 mb-4">
+                                <div class="col-1">
+                                    <img src="./images/fi_calendar.png" width="20px" alt="" srcset="">
+                                </div>
+                                <div class="col-10 ms-lg-2">
+                                    Tahun 2020
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn-success" style="width:100%">Pilih Mobil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card px-4 py-4 mb-3">
+                        <img src="./images/cars/car03.min.jpg" class="card-img-top img-fluid">
+                        <div class="card-body px-0 pt-3 pb-0">
+                            <h5 class="card-title fs-6">Nama/Tipe Mobil</h5>
+                            <h5 class="card-title fs-5 fw-bold">Rp 430.000 / hari</h5>
+                            <p class="cars__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <div class="row">
+                                <div class="col-1">
+                                    <img src="./images/fi_users1.png" width="20px" alt="" srcset="">
+                                </div>
+                                <div class="col-10 ms-lg-2">
+                                    4 orang
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-1">
+                                    <img src="./images/fi_settings.png" width="20px" alt="" srcset="">
+                                </div>
+                                <div class="col-10 ms-lg-2">
+                                    Manual
+                                </div>
+                            </div>
+                            <div class="row mt-2 mb-4">
+                                <div class="col-1">
+                                    <img src="./images/fi_calendar.png" width="20px" alt="" srcset="">
+                                </div>
+                                <div class="col-10 ms-lg-2">
+                                    Tahun 2020
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn-success" style="width:100%">Pilih Mobil</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer id="footer" class="footer contains">
+        <div class="row">
+            <div class="mb-3 mb-sm-0 col-12 col-md-4 col-lg-3">
+                <p class="mb-3 fw-light">
+                    Jalan Suroyo No. 161 Mayangan Kota <br> Probolonggo 672000
+                </p>
+                <p class="mb-3 fw-light">
+                    binarcarrental@gmail.com
+                </p>
+                <p class="m-0 fw-light">
+                    081-233-334-808
+                </p>
+            </div>
+            <div class="mb-3 mb-sm-0 col-12 col-md-3 col-lg-2 fw-normal">
+                <ul class="p-0 m-0">
+                    <li class="mb-3 ">
+                        <a href="" class="text-dark fw-normal text-decoration-none">Our services</a>
+                    </li>
+                    <li class="mb-3 ">
+                        <a href="" class="text-dark fw-normal text-decoration-none">Why Us</a>
+                    </li>
+                    <li class="mb-3 ">
+                        <a href="" class="text-dark fw-normal text-decoration-none">Testimonial</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="text-dark fw-normal text-decoration-none">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mb-3 mb-sm-0 col-12 col-md-4 col-lg-3 fw-light">
+                <p class="mb-3">Connect with us</p>
+                <div class="d-flex">
+                    <a href="#" class="me-3">
+                        <img src="./images/icon_facebook.png" alt="icon-footer">
+                    </a>
+                    <a href="#" class="me-3">
+                        <img src="./images/icon_instagram.png" alt="icon-footer">
+                    </a>
+                    <a href="#" class="me-3">
+                        <img src="./images/icon_twitter.png" alt="icon-footer">
+                    </a>
+                    <a href="#" class="me-3">
+                        <img src="./images/icon_mail.png" alt="icon-footer">
+                    </a>
+                    <a href="#" class="me-3">
+                        <img src="./images/icon_twitch.png" alt="icon-footer">
+                    </a>
+                </div>
+            </div>
+            <div class="mb-3 mb-sm-0 col-12 col-md-4 col-lg-3 mt-0 mt-md-3 mt-lg-0 fw-light">
+                <p class="mb-3">Copyright Binar 2022</p>
+                <div class="logo-box bg-primary"></div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Script Vendor -->
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Script Javascript -->
+    <script type="text/Javascript" src="./scripts/binar.js"></script>
+    <script type="text/Javascript" src="./scripts/app.js"></script>
+    <script type="text/Javascript" src="./scripts/car.js"></script>
+    <script type="text/Javascript" src="./scripts/main.js"></script>
+
+</body>
+
+</html>
