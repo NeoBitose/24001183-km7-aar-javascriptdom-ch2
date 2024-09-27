@@ -34,7 +34,7 @@ dateRent.addEventListener("change", () => {
     checkInput();
 });
 
-document.getElementById("time-rent").addEventListener("change", () => {
+timeRent.addEventListener("change", () => {
     checkInput();
 });
 
